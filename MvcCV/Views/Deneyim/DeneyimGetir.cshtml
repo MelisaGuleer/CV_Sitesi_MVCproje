@@ -1,0 +1,28 @@
+﻿@model MvcCV.Models.Entity.TblDeneyimler
+@{
+    ViewBag.Title = "DeneyimGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Deneyim Güncelleme Sayfası</h4>
+<br />
+<form method="post">
+    @Html.Label("Deneyim ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.Başlık, new { @class = "form-control" })
+    <br />
+    @Html.Label("Altbaşlık")
+    @Html.TextBoxFor(x => x.Altbaşlık, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.Açıklama, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-danger">Güncelle</button>
+</form>
+
+
